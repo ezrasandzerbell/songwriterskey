@@ -26,11 +26,11 @@ const appRoutes: Routes = [
     component: SongbankComponent
   },
   {
-    path: 'view-card',
+    path: 'viewcard',
     component: ViewCardComponent
   },
   {
-    path: 'm-Cipher',
+    path: 'mcipher',
     component: MCipherComponent
   },
   {

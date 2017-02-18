@@ -1,3 +1,5 @@
-<p>
-  m-cipher works!
-</p>
+<div class="formatbody">
+  <div *ngFor="let mcipher of mCiphers">
+      <h3>The English letter {{mcipher.alphabet}} corresponds to {{mcipher.musicNote}}-{{mcipher.color}} is {{mcipher.key}} and has a value of {{mcipher.gematria}}   </h3>
+  </div>
+</div>
