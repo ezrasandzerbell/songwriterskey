@@ -1,0 +1,25 @@
+body {
+  background-color: black;
+}
+
+.formatbody {
+
+  /* black background for body */
+  padding-top: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background: black;
+
+  /* Font styling */
+
+  color: white;
+
+}
+
+.formatbody img {
+  margin-left: 5%;
+}

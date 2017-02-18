@@ -1,3 +1,27 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <ul class="nav navbar-nav navbar-left">
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn"><img src="/assets/images/menuicon.jpg" alt="" style="width: 75px;"></button>
+          <div class="dropdown-content">
+            <a routerLink="/songbank">Main Menu</a>
+            <a routerLink="/">Log In</a>
+            <a routerLink="/view-card">View Card</a>
+            <a routerLink="/control-panel">Edit Song</a>
+            <a routerLink="/about">FAQ</a>
+            <a routerLink="/animation">Animation</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="/"><img src="/assets/images/swklogo.jpg" alt=""></a>
+    </div>
+    <div class="nav navbar-right">
+
+    </div>
+</nav>
+
+<div class="marginTop">
+  <router-outlet></router-outlet>
+</div>
