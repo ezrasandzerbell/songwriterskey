@@ -4,7 +4,7 @@ import { Mcipher } from './../mcipher.model'
 @Component({
   selector: 'app-m-cipher',
   templateUrl: './m-cipher.component.html',
-  styleUrls: ['./m-cipher.component.css']
+  styleUrls: ['./m-cipher.component.css', './m-cipher.component.scss']
 })
 export class MCipherComponent {
 

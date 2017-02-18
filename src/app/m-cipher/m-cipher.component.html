@@ -1,5 +1,9 @@
 <div class="formatbody">
-  <div *ngFor="let mcipher of mCiphers">
-      <h3>The English letter {{mcipher.alphabet}} corresponds to {{mcipher.musicNote}}-{{mcipher.color}} is {{mcipher.key}} and has a value of {{mcipher.gematria}}   </h3>
+  <div class="row">
+    <div *ngFor="let mcipher of mCiphers" class="col-md-1">
+        <div class='{{mcipher.musicNote}}'>
+          <h3>{{mcipher.alphabet}}</h3>
+        </div>
+    </div>
   </div>
 </div>

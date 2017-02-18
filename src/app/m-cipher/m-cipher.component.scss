@@ -119,152 +119,157 @@
 // }
 //
 //
-// .c, .cSharp, .d, .dSharp, .e, .f, .fSharp, .g, .gSharp, .a, .aSharp, .b {
-//   text-align: center;
-//   vertical-align: middle;
-//   font-size: 24px;
-//   color: white;
-//   border-style: dotted;
-//   border-width: thin;
-//   font-family: 'Bungee', cursive;
-//   }
-//
-// .c:hover, .cSharp:hover, .d:hover, .dSharp:hover, .e:hover, .f:hover, .fSharp:hover, .g:hover, .gSharp:hover, .a:hover, .aSharp:hover, .b:hover  {
-//
-//   text-align: center;
-//   vertical-align: middle;
-//   font-size: 24px;
-//   color: white;
-//   border-style: solid;
-//   border-width: thin;
-//   font-family: 'Bungee', cursive;
-// }
-//
-// .c:active, .cSharp:active, .d:active, .dSharp:active, .e:active, .f:active, .fSharp:active, .g:active, .gSharp:active, .a:active, .aSharp:active, .b:active  {
-//   text-align: center;
-//   vertical-align: middle;
-//   font-size: 24px;
-//   color: white;
-//   border-style: solid;
-//   font-family: 'Bungee', cursive;
-// }
-//
-// .c, .c:hover, .c:active {
-//   border-color: #ff0000;
-// }
-//
-// .c:active {
-//   -webkit-box-shadow:inset 0px 0px 0px 2px #FF0000;
-//    -moz-box-shadow:inset 0px 0px 0px 2px #FF0000;
-//    box-shadow:inset 0px 0px 0px 2px #FF0000;
-// }
-//
-// .cSharp, .cSharp:hover, .cSharp:active {
-//   border-color: #ff4000;
-// }
-//
-// .cSharp:active {
-//   -webkit-box-shadow:inset 0px 0px 0px 2px #ff4000;
-//    -moz-box-shadow:inset 0px 0px 0px 2px #ff4000;
-//    box-shadow:inset 0px 0px 0px 2px #ff4000;
-// }
-//
-// .d, .d:hover, .d:active {
-//   border-color: #ffa500;
-// }
-//
-// .d:active{
-//   -webkit-box-shadow:inset 0px 0px 0px 2px #ffa500;
-//    -moz-box-shadow:inset 0px 0px 0px 2px #ffa500;
-//    box-shadow:inset 0px 0px 0px 2px #ffa500;
-// }
-//
-// .dSharp, .dSharp:hover, .dSharp:active {
-//   border-color: #ffce00;
-// }
-//
-// .dSharp:active {
-//   -webkit-box-shadow:inset 0px 0px 0px 2px #ffce00;
-//    -moz-box-shadow:inset 0px 0px 0px 2px #ffce00;
-//    box-shadow:inset 0px 0px 0px 2px #ffce00;
-// }
-//
-// .e, .e:hover, .e:active {
-//   border-color: #FFFF00;
-// }
-//
-// .e:active{
-//   -webkit-box-shadow:inset 0px 0px 0px 2px #FFFF00;
-//    -moz-box-shadow:inset 0px 0px 0px 2px #FFFF00;
-//    box-shadow:inset 0px 0px 0px 2px #FFFF00;
-// }
-//
-// .f, .f:hover, .f:active {
-//   border-color: #bdff00;
-// }
-//
-// .f:active{
-//   -webkit-box-shadow:inset 0px 0px 0px 2px #bdff00;
-//    -moz-box-shadow:inset 0px 0px 0px 2px #bdff00;
-//    box-shadow:inset 0px 0px 0px 2px #bdff00;
-// }
-//
-// .fSharp, .fSharp:hover, .fSharp:active {
-//   border-color: #008000;
-// }
-//
-// .fSharp:active {
-//   -webkit-box-shadow:inset 0px 0px 0px 2px #008000;
-//    -moz-box-shadow:inset 0px 0px 0px 2px #008000;
-//    box-shadow:inset 0px 0px 0px 2px #008000;
-// }
-//
-// .g, .g:hover, .g:active {
-//   border-color: #0fbfa9;
-// }
-//
-// .g:active{
-//   -webkit-box-shadow:inset 0px 0px 0px 2px #0fbfa9;
-//    -moz-box-shadow:inset 0px 0px 0px 2px #0fbfa9;
-//    box-shadow:inset 0px 0px 0px 2px #0fbfa9;
-// }
-//
-// .gSharp, .gSharp:hover, .gSharp:active {
-//   border-color: #0000ff;
-// }
-//
-// .gSharp:active {
-//   -webkit-box-shadow:inset 0px 0px 0px 2px #0000ff;
-//    -moz-box-shadow:inset 0px 0px 0px 2px #0000ff;
-//    box-shadow:inset 0px 0px 0px 2px #0000ff;
-// }
-//
-// .a, .a:hover, .a:active {
-//   border-color: #4b0082;
-// }
-//
-// .a:active{
-//   -webkit-box-shadow:inset 0px 0px 0px 2px #4b0082;
-//    -moz-box-shadow:inset 0px 0px 0px 2px #4b0082;
-//    box-shadow:inset 0px 0px 0px 2px #4b0082;
-// }
-//
-// .aSharp, .aSharp:hover, .aSharp:active {
-//   border-color: #ab6bfd;
-// }
-//
-// .aSharp:active {
-//   -webkit-box-shadow:inset 0px 0px 0px 2px #ab6bfd;
-//    -moz-box-shadow:inset 0px 0px 0px 2px #ab6bfd;
-//    box-shadow:inset 0px 0px 0px 2px #ab6bfd;
-// }
-//
-// .b, .b:hover, .b:active {
-//   border-color: #ee82ee;
-// }
-//
-// .b:active{
-//   -webkit-box-shadow:inset 0px 0px 0px 2px #ee82ee;
-//    -moz-box-shadow:inset 0px 0px 0px 2px #ee82ee;
-//    box-shadow:inset 0px 0px 0px 2px #ee82ee;
-// }
+
+.c {
+  color: red;
+}
+
+.c, .cSharp, .d, .dSharp, .e, .f, .fSharp, .g, .gSharp, .a, .aSharp, .b {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+  color: white;
+  border-style: dotted;
+  border-width: thin;
+  font-family: 'Bungee', cursive;
+  }
+
+.c:hover, .cSharp:hover, .d:hover, .dSharp:hover, .e:hover, .f:hover, .fSharp:hover, .g:hover, .gSharp:hover, .a:hover, .aSharp:hover, .b:hover  {
+
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+  color: white;
+  border-style: solid;
+  border-width: thin;
+  font-family: 'Bungee', cursive;
+}
+
+.c:active, .cSharp:active, .d:active, .dSharp:active, .e:active, .f:active, .fSharp:active, .g:active, .gSharp:active, .a:active, .aSharp:active, .b:active  {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+  color: white;
+  border-style: solid;
+  font-family: 'Bungee', cursive;
+}
+
+.c, .c:hover, .c:active {
+  border-color: #ff0000;
+}
+
+.c:active {
+  -webkit-box-shadow:inset 0px 0px 0px 2px #FF0000;
+   -moz-box-shadow:inset 0px 0px 0px 2px #FF0000;
+   box-shadow:inset 0px 0px 0px 2px #FF0000;
+}
+
+.cSharp, .cSharp:hover, .cSharp:active {
+  border-color: #ff4000;
+}
+
+.cSharp:active {
+  -webkit-box-shadow:inset 0px 0px 0px 2px #ff4000;
+   -moz-box-shadow:inset 0px 0px 0px 2px #ff4000;
+   box-shadow:inset 0px 0px 0px 2px #ff4000;
+}
+
+.d, .d:hover, .d:active {
+  border-color: #ffa500;
+}
+
+.d:active{
+  -webkit-box-shadow:inset 0px 0px 0px 2px #ffa500;
+   -moz-box-shadow:inset 0px 0px 0px 2px #ffa500;
+   box-shadow:inset 0px 0px 0px 2px #ffa500;
+}
+
+.dSharp, .dSharp:hover, .dSharp:active {
+  border-color: #ffce00;
+}
+
+.dSharp:active {
+  -webkit-box-shadow:inset 0px 0px 0px 2px #ffce00;
+   -moz-box-shadow:inset 0px 0px 0px 2px #ffce00;
+   box-shadow:inset 0px 0px 0px 2px #ffce00;
+}
+
+.e, .e:hover, .e:active {
+  border-color: #FFFF00;
+}
+
+.e:active{
+  -webkit-box-shadow:inset 0px 0px 0px 2px #FFFF00;
+   -moz-box-shadow:inset 0px 0px 0px 2px #FFFF00;
+   box-shadow:inset 0px 0px 0px 2px #FFFF00;
+}
+
+.f, .f:hover, .f:active {
+  border-color: #bdff00;
+}
+
+.f:active{
+  -webkit-box-shadow:inset 0px 0px 0px 2px #bdff00;
+   -moz-box-shadow:inset 0px 0px 0px 2px #bdff00;
+   box-shadow:inset 0px 0px 0px 2px #bdff00;
+}
+
+.fSharp, .fSharp:hover, .fSharp:active {
+  border-color: #008000;
+}
+
+.fSharp:active {
+  -webkit-box-shadow:inset 0px 0px 0px 2px #008000;
+   -moz-box-shadow:inset 0px 0px 0px 2px #008000;
+   box-shadow:inset 0px 0px 0px 2px #008000;
+}
+
+.g, .g:hover, .g:active {
+  border-color: #0fbfa9;
+}
+
+.g:active{
+  -webkit-box-shadow:inset 0px 0px 0px 2px #0fbfa9;
+   -moz-box-shadow:inset 0px 0px 0px 2px #0fbfa9;
+   box-shadow:inset 0px 0px 0px 2px #0fbfa9;
+}
+
+.gSharp, .gSharp:hover, .gSharp:active {
+  border-color: #0000ff;
+}
+
+.gSharp:active {
+  -webkit-box-shadow:inset 0px 0px 0px 2px #0000ff;
+   -moz-box-shadow:inset 0px 0px 0px 2px #0000ff;
+   box-shadow:inset 0px 0px 0px 2px #0000ff;
+}
+
+.a, .a:hover, .a:active {
+  border-color: #4b0082;
+}
+
+.a:active{
+  -webkit-box-shadow:inset 0px 0px 0px 2px #4b0082;
+   -moz-box-shadow:inset 0px 0px 0px 2px #4b0082;
+   box-shadow:inset 0px 0px 0px 2px #4b0082;
+}
+
+.aSharp, .aSharp:hover, .aSharp:active {
+  border-color: #ab6bfd;
+}
+
+.aSharp:active {
+  -webkit-box-shadow:inset 0px 0px 0px 2px #ab6bfd;
+   -moz-box-shadow:inset 0px 0px 0px 2px #ab6bfd;
+   box-shadow:inset 0px 0px 0px 2px #ab6bfd;
+}
+
+.b, .b:hover, .b:active {
+  border-color: #ee82ee;
+}
+
+.b:active{
+  -webkit-box-shadow:inset 0px 0px 0px 2px #ee82ee;
+   -moz-box-shadow:inset 0px 0px 0px 2px #ee82ee;
+   box-shadow:inset 0px 0px 0px 2px #ee82ee;
+}
