@@ -9,32 +9,49 @@ import { Mcipher } from './../mcipher.model'
 export class MCipherComponent {
 
   mCiphers: Mcipher[] = [
-    new Mcipher("A", "e", "Yellow", "key0", 1),
-    new Mcipher("B", "e", "Yellow", "key1", 2),
-    new Mcipher("C", "dSharp", "Orange-Yellow", "key8", 8),
-    new Mcipher("D", "fSharp", "Green", "key4", 4),
-    new Mcipher("E", "c", "Red", "key5", 5),
-    new Mcipher("F", "c", "Red", "key16", 80),
-    new Mcipher("G", "gSharp", "Blue", "key2", 3),
-    new Mcipher("H", "c", "Red", "key4", 5),
-    new Mcipher("I", "f", "Yellow-Green", "key9", 10),
-    new Mcipher("J", "f", "Yellow-Green", "key9", 10),
-    new Mcipher("K", "aSharp", "Violet", "key10", 20),
-    new Mcipher("L", "fSharp", "Green", "key11", 30),
-    new Mcipher("M", "gSharp", "Blue", "key12", 40),
-    new Mcipher("N", "g", "Green-Blue", "key13", 50),
-    new Mcipher("O", "a", "Blue-Violet", "key15", 70),
-    new Mcipher("P", "c", "Red", "key16", 80),
-    new Mcipher("Q", "b", "Violet-red", "key18", 100),
-    new Mcipher("R", "d", "Orange", "key19", 200),
-    new Mcipher("S", "gSharp", "Blue", "key14", 60),
-    new Mcipher("SH", "c", "Red", "key20", 300),
-    new Mcipher("T", "a", "Blue-Violet", "key21", 400),
-    new Mcipher("U", "cSharp", "Red-Orange", "key5", 6),
-    new Mcipher("V", "cSharp", "Red-Orange", "key5", 6),
-    new Mcipher("W", "cSharp", "Red-Orange", "key5", 6),
-    new Mcipher("X", "aSharp", "Violet", "key17", 90),
-    new Mcipher("Y", "f", "Yellow-Green", "key9", 10),
-    new Mcipher("Z", "d", "Orange", "card7", 7)
+    new Mcipher("a", "e", "Yellow", "key0", 1),
+    new Mcipher("b", "e", "Yellow", "key1", 2),
+    new Mcipher("c", "dSharp", "Orange-Yellow", "key8", 8),
+    new Mcipher("d", "fSharp", "Green", "key4", 4),
+    new Mcipher("e", "c", "Red", "key5", 5),
+    new Mcipher("f", "c", "Red", "key16", 80),
+    new Mcipher("g", "gSharp", "Blue", "key2", 3),
+    new Mcipher("h", "c", "Red", "key4", 5),
+    new Mcipher("i", "f", "Yellow-Green", "key9", 10),
+    new Mcipher("j", "f", "Yellow-Green", "key9", 10),
+    new Mcipher("k", "aSharp", "Violet", "key10", 20),
+    new Mcipher("l", "fSharp", "Green", "key11", 30),
+    new Mcipher("m", "gSharp", "Blue", "key12", 40),
+    new Mcipher("n", "g", "Green-Blue", "key13", 50),
+    new Mcipher("o", "a", "Blue-Violet", "key15", 70),
+    new Mcipher("p", "c", "Red", "key16", 80),
+    new Mcipher("q", "b", "Violet-red", "key18", 100),
+    new Mcipher("r", "d", "Orange", "key19", 200),
+    new Mcipher("s", "gSharp", "Blue", "key14", 60),
+    new Mcipher("t", "a", "Blue-Violet", "key21", 400),
+    new Mcipher("u", "cSharp", "Red-Orange", "key5", 6),
+    new Mcipher("v", "cSharp", "Red-Orange", "key5", 6),
+    new Mcipher("w", "cSharp", "Red-Orange", "key5", 6),
+    new Mcipher("x", "aSharp", "Violet", "key17", 90),
+    new Mcipher("y", "f", "Yellow-Green", "key9", 10),
+    new Mcipher("z", "d", "Orange", "card7", 7)
   ];
-}
+
+
+
+  constructor() {
+    var outputArray = []
+    
+    function musicEncryption() {
+      var inputArray = this.downcase().split("")
+      for (var i = 0; i <= inputArray.length -1; i++) {
+        for (var x = 0; x <= Mcipher.length -1; x++) {
+          if (Mcipher[x].alphabet == inputArray[i]) {
+            outputArray.push(Mcipher[x])
+          }
+        }
+      }
+      return outputArray.join(" ");
+    }
+  }
+};

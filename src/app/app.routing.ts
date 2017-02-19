@@ -18,7 +18,7 @@ const appRoutes: Routes = [
     component: AboutComponent
   },
   {
-    path: 'control-panel',
+    path: 'controlpanel/:id',
     component: ControlPanelComponent
   },
   {
@@ -26,7 +26,7 @@ const appRoutes: Routes = [
     component: SongbankComponent
   },
   {
-    path: 'viewcard',
+    path: 'viewcard/:id',
     component: ViewCardComponent
   },
   {

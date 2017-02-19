@@ -20,6 +20,13 @@ body {
 
 }
 
+.panel {
+  color: black;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+}
+
 .formatbody img {
   margin-left: 5%;
 }
