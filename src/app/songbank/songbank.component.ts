@@ -17,6 +17,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 })
 export class SongbankComponent implements OnInit {
   songs: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
   constructor(private router: Router, private songService: SongService) {}
 

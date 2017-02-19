@@ -1,3 +1,13 @@
-<p>
-  edit-song works!
-</p>
+<h4>Edit Song</h4>
+
+<div>
+  <input [(ngModel)]="selectedSong.title" placeholder="Edit Song Title">
+</div>
+<br>
+<div>
+  <input [(ngModel)]="selectedSong.lyrics" placeholder="Edit Song Lyrics">
+</div>
+
+<button (click)="beginUpdatingSong(selectedSong)">Update</button>
+<hr>
+<button (click)="beginDeletingSong(selectedSong)">Delete</button>

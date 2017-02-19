@@ -1,10 +1,16 @@
 <div class="formatbody">
   <br><br>
-  <div *ngFor="let song of songs | async" (click)="goToDetailPage(song)" class="panel panel-default">
-      <div class="panel-body">
-        <h4>Title: {{song.title}}</h4>
-      </div>
-      <br>
+  <div *ngFor="let song of songs | async" class="panel panel-default">
+    <div class="panel-body">
+      <h4 (click)="goToDetailPage(song)">Title: {{song.title}}</h4>
+    </div>
+    <br>
+    <div *ngIf="currentRoute === '/admin'">
+      {{song.lyrics}}
+      <hr>
+      <app-edit-song [selectedSong]="song"></app-edit-song>
+    </div>
   </div>
+
   <img src="./assets/images/songbank.jpg" alt="">
 </div>

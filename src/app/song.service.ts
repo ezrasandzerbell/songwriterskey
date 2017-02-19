@@ -16,11 +16,22 @@ export class SongService {
     return this.songs;
   }
 
+  updateSong(localUpdatedSong){
+    var songEntryInFirebase = this.getSongById(localUpdatedSong.$key);
+    songEntryInFirebase.update({title: localUpdatedSong.title,
+                                artist: localUpdatedSong.lyrics});
+  }
+
   addSong(newSong: Song) {
      this.songs.push(newSong);
   }
 
   getSongById(songId: number){
     return this.angularFire.database.object('songs/' + songId)
+  }
+
+  deleteSong(localSongToDelete){
+    var songEntryInFirebase = this.getSongById(localSongToDelete.$key);
+    songEntryInFirebase.remove();
   }
 }
