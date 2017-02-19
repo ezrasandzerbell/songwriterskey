@@ -5,7 +5,7 @@ body {
 .formatbody {
 
   /* black background for body */
-  padding-top: 120px;
+  padding-top: 150px;
   position: fixed;
   top: 0;
   left: 0;
@@ -13,7 +13,7 @@ body {
   right: 0;
   overflow: auto;
   background: black;
-
+  text-align: center;
   /* Font styling */
 
   color: white;
