@@ -14,6 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AdminComponent } from './admin/admin.component';
+import { EditSongComponent } from './edit-song/edit-song.component';
 
 
 export const firebaseConfig = {
@@ -34,7 +35,8 @@ export const firebaseConfig = {
     KeyboardComponent,
     MCipherComponent,
     AboutComponent,
-    AdminComponent
+    AdminComponent,
+    EditSongComponent
   ],
   imports: [
     BrowserModule,

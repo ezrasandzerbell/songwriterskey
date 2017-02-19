@@ -24,7 +24,7 @@ export class SongbankComponent implements OnInit {
     this.songs = this.songService.getSongs();
   }
 
-  goToDetailPage(clickedSong: Song) {
+  goToDetailPage(clickedSong) {
      this.router.navigate(['controlpanel', clickedSong.$key]);
    };
 

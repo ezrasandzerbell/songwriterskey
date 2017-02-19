@@ -1,7 +1,20 @@
 <div class="formatbody">
-  <input #title placeholder="Your Song Title">
-  <br>
-  <input #lyrics placeholder="Your Song Lyrics">
-  <br>
-  <button (click)="submitForm(title.value, lyrics.value); title.value=''; lyrics.value=''">Add</button>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Add New Song to Bank</h3>
+    </div>
+    <div class="panel-body">
+      <div>
+        <input #title placeholder="Your Song Title">
+      </div>
+      <br>
+      <div>
+        <input #lyrics placeholder="Your Song Lyrics">
+      </div>
+      <br>
+      <button (click)="submitForm(title.value, lyrics.value); title.value=''; lyrics.value=''">Add</button>
+    </div>
+  </div>
+  <app-songbank></app-songbank>
+
 </div>

@@ -6,7 +6,7 @@ import { Song } from '../song.model';
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css'],
+  styleUrls: ['./admin.component.css', './admin.component.scss'],
   providers: [SongService]
 })
 
