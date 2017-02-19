@@ -7,6 +7,7 @@ import { SongbankComponent } from './songbank/songbank.component'
 import { ViewCardComponent } from './view-card/view-card.component'
 import { KeyboardComponent } from './keyboard/keyboard.component'
 import { MCipherComponent } from './m-cipher/m-cipher.component'
+import { AdminComponent }   from './admin/admin.component';
 
 const appRoutes: Routes = [
   {
@@ -36,6 +37,10 @@ const appRoutes: Routes = [
   {
     path: 'keyboard',
     component: KeyboardComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
 ];
 

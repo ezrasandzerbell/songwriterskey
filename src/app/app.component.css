@@ -63,3 +63,16 @@ a.navbar-brand {
 .dropdown:hover .dropbtn {
     background-color: #a0771e;
 }
+
+.footer {
+  position: fixed;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  font-size: 40px;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  color: black;
+  z-index: 1;
+}

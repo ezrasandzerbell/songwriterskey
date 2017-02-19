@@ -1,6 +1,6 @@
 <div class="formatbody">
   <br><br>
-  <div *ngFor="let song of SONGS" (click)="goToDetailPage(song)" class="panel panel-default">
+  <div *ngFor="let song of songs | async" (click)="goToDetailPage(song)" class="panel panel-default">
       <div class="panel-body">
         <h4>Title: {{song.title}}</h4>
       </div>

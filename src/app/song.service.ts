@@ -1,22 +1,26 @@
 import { Injectable } from '@angular/core';
 import { Song } from './song.model'
 import { SONGS } from './mock-songs'
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Injectable()
 export class SongService {
 
-  constructor() { }
+  songs: FirebaseListObservable<any[]>;
+
+  constructor(private angularFire: AngularFire) {
+    this.songs = angularFire.database.list('songs');
+  }
 
   getSongs() {
-    return SONGS;
+    return this.songs;
+  }
+
+  addSong(newSong: Song) {
+     this.songs.push(newSong);
   }
 
   getSongById(songId: number){
-    for (var i = 0; i <= SONGS.length - 1; i++) {
-      if (SONGS[i].id === songId) {
-        return SONGS[i];
-      }
-    }
+    return this.angularFire.database.object('songs/' + songId)
   }
-
 }

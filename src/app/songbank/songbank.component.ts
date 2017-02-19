@@ -6,6 +6,8 @@ import { Router } from '@angular/router';
 import { MCipherComponent } from '../m-cipher/m-cipher.component'
 import { ControlPanelComponent } from '../control-panel/control-panel.component'
 import { SongService } from '../song.service';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
+
 
 @Component({
   selector: 'app-songbank',
@@ -14,16 +16,16 @@ import { SongService } from '../song.service';
   providers: [SongService]
 })
 export class SongbankComponent implements OnInit {
-  SONGS: Song[]
+  songs: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private songService: SongService) {}
 
   ngOnInit(){
-    this.SONGS = this.songService.getSongs();
+    this.songs = this.songService.getSongs();
   }
 
   goToDetailPage(clickedSong: Song) {
-     this.router.navigate(['controlpanel', clickedSong.id]);
+     this.router.navigate(['controlpanel', clickedSong.$key]);
    };
 
 

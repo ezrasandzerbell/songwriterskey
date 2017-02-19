@@ -11,6 +11,18 @@ import { SongbankComponent } from './songbank/songbank.component';
 import { KeyboardComponent } from './keyboard/keyboard.component';
 import { MCipherComponent } from './m-cipher/m-cipher.component';
 import { AboutComponent } from './about/about.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AdminComponent } from './admin/admin.component';
+
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
+
 
 @NgModule({
   declarations: [
@@ -21,13 +33,15 @@ import { AboutComponent } from './about/about.component';
     SongbankComponent,
     KeyboardComponent,
     MCipherComponent,
-    AboutComponent
+    AboutComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

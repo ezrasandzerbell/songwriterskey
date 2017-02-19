@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 import { Mcipher } from './../mcipher.model'
 import { Song } from './../song.model'
 import { SongService } from '../song.service';
+import { FirebaseObjectObservable } from 'angularfire2';
 
 @Component({
   selector: 'app-control-panel',
@@ -13,7 +14,7 @@ import { SongService } from '../song.service';
 })
 export class ControlPanelComponent implements OnInit {
   songId: number;
-  songToDisplay: Song;
+  songToDisplay;
 
   constructor(
     private route: ActivatedRoute,
@@ -27,5 +28,4 @@ export class ControlPanelComponent implements OnInit {
     });
     this.songToDisplay = this.songService.getSongById(this.songId);
   }
-
 }

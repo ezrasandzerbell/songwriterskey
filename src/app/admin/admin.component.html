@@ -1,0 +1,7 @@
+<div class="formatbody">
+  <input #title placeholder="Your Song Title">
+  <br>
+  <input #lyrics placeholder="Your Song Lyrics">
+  <br>
+  <button (click)="submitForm(title.value, lyrics.value); title.value=''; lyrics.value=''">Add</button>
+</div>
